@@ -11,6 +11,8 @@
 
 ```dnx web```
 
+```dnx-watch web```
+
 ## JSX compile
 
 Not working

@@ -29,7 +29,8 @@ namespace ReactDotNet
                 routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}" );
             });
             app.UseReact(config => {
-                    config.AddScript("~/scripts/tutorial.jsx"); 
+                config.AddScript("~/scripts/tutorial.jsx");
+                config.AddScript("~/scripts/hello.jsx");
             });
         }
 
