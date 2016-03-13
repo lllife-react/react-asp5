@@ -24,14 +24,17 @@ namespace ReactDotNet
         public void Configure(IApplicationBuilder app)
         {
             app.UseIISPlatformHandler();
-            app.UseStaticFiles();
             app.UseMvc(routes =>  {
                 routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}" );
             });
-            app.UseReact(config => {
-                config.AddScript("~/scripts/tutorial.jsx");
-                config.AddScript("~/scripts/hello.jsx");
+            app.UseReact(config =>
+            {
+                config
+                    .SetReuseJavaScriptEngines(true)
+                    .AddScript("~/scripts/tutorial.jsx")
+                    .AddScript("~/scripts/hello.jsx");
             });
+            app.UseStaticFiles();
         }
 
         // Entry point for the application.

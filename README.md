@@ -15,7 +15,7 @@
 
 ## JSX compile
 
-Not working
+Not working on OSX
 
 
 
