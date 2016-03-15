@@ -4,15 +4,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var React = __React;
+var ReactDOM = __React.__DOM;
 var HelloMessage = (function (_super) {
     __extends(HelloMessage, _super);
     function HelloMessage() {
         _super.apply(this, arguments);
     }
     HelloMessage.prototype.render = function () {
-        return React.createElement("div", null, 
-            "Hello ", 
-            this.props.name);
+        return React.createElement("div", null, "Hello ", this.props.name);
     };
     return HelloMessage;
 }(React.Component));

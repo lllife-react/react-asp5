@@ -1,7 +1,7 @@
 ﻿/// <reference path="../typings/main.d.ts" />
 
-//import React = __React;
-//import ReactDOM = __React.__DOM;
+import React = __React;
+import ReactDOM = __React.__DOM;
 
 
 interface HelloWorldProps extends React.Props<any> {

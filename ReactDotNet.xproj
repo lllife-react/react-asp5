@@ -15,10 +15,6 @@
     <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
 
-  <PropertyGroup>
-	  <TypeScriptJSXEmit>react</TypeScriptJSXEmit>
-  </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <ProduceOutputsOnBuild>True</ProduceOutputsOnBuild>
   </PropertyGroup>
